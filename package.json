@@ -1,0 +1,18 @@
+{
+  "name": "connectorapptest",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "ui:headed": "playwright test --headed --project=chromium --workers=1 --trace on",
+    "ui:headless": "playwright test --project=chromium",
+    "ui:debug": "playwright test --debug",
+    "clean": "node -e \"const fs=require('fs'); ['test-results','playwright-report'].forEach(d => fs.rmSync(d,{recursive:true,force:true})); console.log('cleaned');\"",
+    "audit": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.52.0",
+    "@types/node": "^22.15.0",
+    "dotenv": "^16.5.0",
+    "typescript": "^5.8.0"
+  }
+}

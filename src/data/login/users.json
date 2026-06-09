@@ -1,0 +1,6 @@
+{
+  "_comment": "Test user credentials.",
+  "admin": { "username": "Admin", "password": "admin123" },
+  "invalid": { "username": "invalid_user", "password": "wrong_password" },
+  "emptyPassword": { "username": "Admin", "password": "" }
+}
